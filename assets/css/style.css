@@ -1,0 +1,43 @@
+body{
+    
+    background-image: url("../images/Thomas.jpg");
+
+}
+
+table{
+    width:90%;
+}
+
+
+tr{
+    
+    background: rgba(88, 96, 201, 0.56);
+    font-size: 20pt;
+    color: seashell;
+}
+
+thead{
+
+    background-color: blue;
+}
+
+form{
+    background: rgba(126, 128, 158, 0.70);
+    width: 100%;
+    font-size: 20pt;
+    color: seashell;
+    
+}
+
+.jumbotron{
+
+    background-image: url("../images/Thomas.jpg");
+    color: red;
+    text-shadow: 30pt;
+
+}
+
+h1{
+
+    font-size: 60pt;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- linking Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- linking CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+    <div>
+        <div class="jumbotron" id="jumbotron">
+            <div class="container">
+                <h1 class="text-center">Train Schedule</h1>
+                <p class="text-center">"Ride that train! Cho Choo!"</p>
+            </div>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency(min)</th>
+                    <th scope="col">Next Arrival</th>
+                    <th>Minutes Away</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="htmltrainname"></td>
+                    <td class="htmldestination"></td>
+                    <td class="htmlfrequency"></td>
+                    <td class="htmlnextarrival"></td>
+                    <td class="htmlminutesaway"></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <form>
+            <div class="form-group">
+                <label>Train Name</label>
+                <input type="text" class="form-control" id="trainname" placeholder="Train Name">
+            </div>
+            <div class="form-group">
+                <label>Destination</label>
+                <input type="text" class="form-control" id="destination" placeholder="e.g. Toledo">
+            </div>
+            <div class="form-group">
+                <label>Train Start Time</label>
+                <input type="text" class="form-control" id="starttime" placeholder="24 hour time (00:00)">
+            </div>
+            <div class="form-group">
+                <label>Frequency (mins.)</label>
+                <input type="number" class="form-control" id="frequency" placeholder="">
+            </div>
+            <button type="submit" id="submitbutton" class="btn btn-primary">Submit</button>
+        </form>
+
+
+
+        <!-- linking JQUERY -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- linking FIREBASE -->
+
+        <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+
+        <!-- Added Moment JS -->
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyBho5Ba2GVqqdlYJFNWjWc80LpRn1h0k7g",
+                authDomain: "train-schedule-c90af.firebaseapp.com",
+                databaseURL: "https://train-schedule-c90af.firebaseio.com",
+                projectId: "train-schedule-c90af",
+                storageBucket: "",
+                messagingSenderId: "172598138051"
+            };
+            firebase.initializeApp(config);
+
+        </script>
+
+       <!--Link JavaScript  -->
+    <script type="text/javascript" src="./assets/javascript/app.js"></script>    
+
+
+</body>
+
+</html>
